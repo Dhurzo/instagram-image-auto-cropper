@@ -1,4 +1,4 @@
-# ig_image_resizer
+# instagram-image-auto-cropper
 
 A Rust tool for cropping/resizing images from a folder to Instagram's recommended maximum size.
 Supports auto, vertical, and horizontal modes.
