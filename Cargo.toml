@@ -1,0 +1,27 @@
+[package]
+name = "ig_image_resizer"
+version = "0.1.0"
+edition = "2021"
+authors = ["Juan"]
+description = "A Rust tool for cropping/resizing images to Instagram's recommended maximum size"
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/yourusername/ig_image_resizer"
+keywords = ["instagram", "image", "resize", "crop"]
+categories = ["command-line-utilities", "multimedia"]
+
+[[bin]]
+name = "ig_image_resizer"
+path = "src/main.rs"
+
+[[bin]]
+name = "script"
+path = "src/bin/script.rs"
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"] }
+image = "0.24"
+walkdir = "2.5"
+kamadak-exif = "0.6.1"
+rayon = "1.10"
+anyhow = "1.0"
